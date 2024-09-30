@@ -23,3 +23,14 @@ requirements (criar)
 - pip freeze
 - pip freeze > requirements.txt
 
+#### projeto na pasta raiz (iniciar)
+- django-admin startproject setup .
+- retirar a SECRET_KEY do arquivo settings.py e incluir no arquivo .env
+    file: settings.py<br>
+        - from pathlib import Path, os<br>
+        - from dotenv import load_dotenv<br>
+        - load_dotenv()<br>
+        - SECRET_KEY = str(os.getenv('SECRET_KEY'))<br>
+    file: .env<br>
+        - SECRET_KEY = chave<br>
+- python manage.py runserver
