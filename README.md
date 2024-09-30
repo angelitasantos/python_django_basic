@@ -19,7 +19,7 @@
 - pip install pillow
 - pip install python-dotenv
 
-requirements (criar)
+#### requirements (criar)
 - pip freeze
 - pip freeze > requirements.txt
 
@@ -50,3 +50,10 @@ requirements (criar)
 - index: http://127.0.0.1:8000/
 - sobre: http://127.0.0.1:8000/sobre/
 - contato: http://127.0.0.1:8000/contato/
+
+#### templates (configurar)
+- 'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
+#### arquivos estáticos (configurar)
+- arquivo settings.py
+- html: {% load static %}
