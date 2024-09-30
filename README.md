@@ -38,3 +38,9 @@ requirements (criar)
 #### idioma e TIME_ZONE (alterar)
 - LANGUAGE_CODE = 'pt-BR'
 - TIME_ZONE = 'America/Sao_Paulo'
+
+#### superuser (criar)
+- python manage.py makemigrations
+- python manage.py migrate
+- python manage.py createsuperuser
+- http://127.0.0.1:8000/admin
