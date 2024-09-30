@@ -44,3 +44,9 @@ requirements (criar)
 - python manage.py migrate
 - python manage.py createsuperuser
 - http://127.0.0.1:8000/admin
+
+#### home e rotas (criar/configurar)
+- python manage.py startapp home
+- index: http://127.0.0.1:8000/
+- sobre: http://127.0.0.1:8000/sobre/
+- contato: http://127.0.0.1:8000/contato/
