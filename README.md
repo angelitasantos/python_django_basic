@@ -57,3 +57,9 @@
 #### arquivos estáticos (configurar)
 - arquivo settings.py
 - html: {% load static %}
+
+#### templates home (criar)
+- criar templates html para as páginas: home, sobre, contato
+
+#### bootstrap (adicionar links)
+- https://getbootstrap.com/
