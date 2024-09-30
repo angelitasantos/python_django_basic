@@ -25,7 +25,7 @@ requirements (criar)
 
 #### projeto na pasta raiz (iniciar)
 - django-admin startproject setup .
-- retirar a SECRET_KEY do arquivo settings.py e incluir no arquivo .env
+- retirar a SECRET_KEY do arquivo settings.py e incluir no arquivo .env<br>
     file: settings.py<br>
         - from pathlib import Path, os<br>
         - from dotenv import load_dotenv<br>
@@ -34,3 +34,7 @@ requirements (criar)
     file: .env<br>
         - SECRET_KEY = chave<br>
 - python manage.py runserver
+
+#### idioma e TIME_ZONE (alterar)
+- LANGUAGE_CODE = 'pt-BR'
+- TIME_ZONE = 'America/Sao_Paulo'
