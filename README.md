@@ -63,3 +63,6 @@
 
 #### bootstrap (adicionar links)
 - https://getbootstrap.com/
+
+#### mensagens (configurar)
+- settings.py, urls.py, .html

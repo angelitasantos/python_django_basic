@@ -5,7 +5,16 @@
 {% block content %}
 <main class='container'>
   <section class='text-center'>
-    <h1 class='display-6'>HOME</h1>  
+    <h1 class='display-6'>HOME</h1>
+    
+    {% if messages %}
+        {% for message in messages %}
+        <section class='alert {{message.tags}}'>
+            {{message}}
+        </section>
+        {% endfor %}
+    {% endif %}
+
     <img src='{% static 'img/logo.png' %}' alt='logo'>
   </section>
 </main>

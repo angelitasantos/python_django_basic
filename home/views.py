@@ -1,9 +1,13 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
+from django.contrib.messages import constants
+from django.contrib import messages
 
 
 def index(request):
     # return HttpResponse('Home Principal')
+    messages.add_message(
+        request, constants.WARNING, 'Mensagem funcionando !!!')
     return render(request, 'home/index.html')
 
 
